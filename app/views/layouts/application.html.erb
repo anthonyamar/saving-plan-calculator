@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MilionCalculator</title>
+    <title>The Saving Plan Calculator !</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+    <meta property="og:title"              content="The Saving Plan Calculator" />
+    <meta property="og:description"        content="Know how much money you need to save to achieve your goal." />
+    <meta property="og:image"              content="<%= image_url('facebook-jumbo.png') %>" />
+
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -15,5 +20,5 @@
     <%= yield %>
     <%= render 'layouts/footer' %>
   </body>
-  
+
 </html>

@@ -1,0 +1,43 @@
+/* FOR DESKTOP AND LARGE TABLETS LANDSCAPE MODES */
+
+@media screen and (min-width: 960px) {
+
+  // GENERAL 
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* FOR MOBILE IN PORTRAIT AND LANDSCAPE AND TABLETS */
+
+@media screen and (max-width: 960px) {
+
+  // GENERAL
+  .large-screen-only, hide-on {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 300px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+}

@@ -28,14 +28,14 @@
         </div>
       </div>
     </div>
-    
+    <!--  VOUCHER CODE DISPLAY  -->
     <div id="voucher" class="ui green segment">
       Download  <a href="https://bankin.com/en/home.html">Bankin'</a> on <a href="https://itunes.apple.com/fr/app/bankin-la-meilleure-app-pour-g%C3%A9rer-mon-argent/id447040033?mt=8">iOS</a> or <a href="https://play.google.com/store/apps/details?id=com.bankeen&hl=fr">Android</a>. Add this voucher code for <strong>a free premium month !</strong><br>
       <h1 class="ui center aligned header voucher-code">AZQLQF</h1>
       <i class="ui grey text">I'm not working for Bankin' at all, I just love their app and want to share it to the world :-).</i>
     </div>
-    
-    <div class="ui placeholder segment margin-top-50">
+    <!--  DESKTOP PART  -->
+    <div class="ui placeholder segment margin-top-50 large-screen-only">
       <div class="ui two column very relaxed stackable grid">
         <div class="column">
           <%= link_to root_path, class: "ui labeled icon blue button" do %> 
@@ -52,6 +52,24 @@
       </div>
       <div class="ui vertical divider">
         Or
+      </div>
+    </div>
+    <!--  MOBILE PART  -->
+    <div class="ui center aligned basic segment mobile-only">
+      <div class="column">
+        <%= link_to root_path, class: "ui labeled icon blue button" do %> 
+          <i class="redo icon"></i>
+          Calculate a new saving plan
+        <% end %>
+      </div>
+      <div class="ui horizontal divider">
+        Or
+      </div>
+      <div class="middle aligned column">
+        <button class="ui labeled icon green button" onclick="displayVoucher()">
+          <i class="dollar icon"></i>
+          Manage your money with Bankin'
+        </button>
       </div>
     </div>
   </div>

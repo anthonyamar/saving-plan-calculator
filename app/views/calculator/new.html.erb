@@ -14,7 +14,11 @@
     <div class="fluid ui input">
       <%= f.input :end_age, placeholder: "65", wrapper: false, label: false %>
     </div><br><br>
-    <%= f.button :submit, class: "huge fluid ui blue button", value: "Tell me how much money I need to save" %><br><br>
+    <%= button_tag(type: 'submit', class: "huge fluid ui blue button") do %>
+      <span class="large-screen-only">Tell me how much money I need to save !</span>
+      <span class="mobile-only">Tell me !</span>
+    <% end %>
+    <br><br>
     <div class="ui centered aligned grid">
       <a href="https://github.com/anthonyamar/saving-plan-calculator">
         <div class="mini ui basic yellow button">
