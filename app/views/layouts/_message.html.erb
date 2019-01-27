@@ -1,0 +1,10 @@
+<% flash.each do |key, value| %>
+  <div id="message" class="ui container margin-top-25">
+    <div class="ui red message"><%= value %> <i class="close icon" onclick="dismissAlert()"></i></div>
+  </div>
+<% end %>
+<script>
+  dismissAlert = function(){
+    document.getElementById("message").style.display = "none";
+  }
+</script>
