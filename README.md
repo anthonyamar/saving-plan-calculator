@@ -1,24 +1,15 @@
-# README
+# THE SAVING PLAN CALCULATOR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A calculator that helps you to create savings plan and achieve your goals. 💸
 
-Things you may want to cover:
+Host on Heroku at https://saving-plan-calculator.herokuapp.com/
 
-* Ruby version
+# CONTRIBUTE
 
-* System dependencies
+Don't hesitate to fork the repo and contribute. <br>
+Next step : 
+- Allow people to add an annual return rate <br>
 
-* Configuration
+You have an idea ? Fork it and send a PR ! <3
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
