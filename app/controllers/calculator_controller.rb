@@ -11,7 +11,7 @@ class CalculatorController < ApplicationController
     @calculator = CalculatorForm.new(calculator_params)
     if @calculator.save
       reset_session
-      session[:data] = Calculator.new(@calculator.start_age, @calculator.end_age, @calculator.money_goal).perform
+      session[:data] = @calculator.results
       redirect_to calculator_show_path
     else
       redirect_to root_path
@@ -24,6 +24,6 @@ class CalculatorController < ApplicationController
   private
 
   def calculator_params
-    params.require(:calculator).permit(:start_age, :end_age, :money_goal)
+    params.require(:calculator).permit(:start_age, :end_age, :money_goal, :savings_rate)
   end
 end

@@ -1,19 +1,20 @@
 <div class="form-box ui raised very padded text container segment">
-  <%= simple_form_for @calculator, as: :calculator, url: calculator_create_path(@calculator), method: :post do |f| %>
+  <%= simple_form_for @calculator, as: :calculator, url: calculator_create_path(@calculator), defaults: { label: false, wrapper: false }, method: :post do |f| %>
     <h3 class="ui header">How much money do you want ?</h3>
     <div class="fluid ui right labeled input">
       <label for="amount" class="ui label">$</label>
-      <%= f.input :money_goal, placeholder: "1000000", wrapper: false, label: false %>
+      <%= f.input :money_goal, placeholder: "1000000" %>
       <div class="ui basic label">.00</div>
     </div>
     <h3>How old are you ? </h3>
     <div class="fluid ui input">
-      <%= f.input :start_age, placeholder: "18", wrapper: false, label: false %>
+      <%= f.input :start_age, placeholder: "18" %>
     </div>
     <h3>At what age would you want to have this money ? </h3>
     <div class="fluid ui input">
-      <%= f.input :end_age, placeholder: "65", wrapper: false, label: false %>
-    </div><br><br>
+      <%= f.input :end_age, placeholder: "65" %>
+    </div>
+    <br><br>
     <%= button_tag(type: 'submit', class: "huge fluid ui blue button") do %>
       <span class="large-screen-only">Tell me how much money I need to save !</span>
       <span class="mobile-only">Tell me !</span>

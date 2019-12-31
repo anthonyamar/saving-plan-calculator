@@ -9,21 +9,21 @@ class Calculator
   end
   
   def perform
-    {
+    hash = {
       year_saving: number_to_currency(year_saving),
       month_saving:number_to_currency(month_saving),
       day_saving: number_to_currency(day_saving),
       number_of_year: number_of_year,
       money_goal: number_to_currency(money_goal),
       start_age: start_age,
-      end_age: end_age
-      }
+      end_age: end_age,
+    }
   end
   
   private
   
   def number_of_year
-    (end_age - start_age)
+    end_age - start_age
   end
   
   def year_saving
