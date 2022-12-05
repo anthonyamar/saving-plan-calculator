@@ -2,8 +2,6 @@
 
 A calculator that helps you to create savings plan and achieve your goals. 💸
 
-Host on Heroku at https://saving-plan-calculator.herokuapp.com/
-
 # CONTRIBUTE
 
 Don't hesitate to fork the repo and contribute. <br>
